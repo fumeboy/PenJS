@@ -1,0 +1,39 @@
+#footer {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100vw;
+    height: 10rem;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    flex-direction: row;
+}
+
+#main {
+    width: 100%;
+}
+#router_view {
+    margin-right: 340px;
+}
+#sidebar {
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    z-index: 6;
+    width: 340px;
+    min-height: 100%;
+    background: #fff;
+    border-left: 1px solid #eee;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-size: 1.2rem;
+    text-align: left;
+    margin: 0;
+}

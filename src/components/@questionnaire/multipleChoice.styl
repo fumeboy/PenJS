@@ -1,0 +1,36 @@
+.btn
+  border: 0
+  padding: 7px 20px
+  margin: 0 5px
+  outline: none
+  &:hover
+    background: #eee
+
+.main
+  .box
+    border-radius: 3px
+    padding: 10px
+    .content
+    .answers
+      .item
+        position: relative
+        padding: 2px 5px
+        margin: 10px 5px
+        border-radius: 5px
+        transition: all ease 0.3s
+        border: 1px solid transparent
+        &:hover
+          border-bottom: 1px solid #ccc
+        &::after
+          position: absolute
+          right: 10px
+          height: 100%
+          top: 10px
+      .right
+        border-bottom: 1px solid #ccc
+      .right::after, .right.selected::after
+        content: 'right'
+      .wrong.selected::after
+        content: 'wrong'
+      .selected::after
+        content: 'selected'
